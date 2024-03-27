@@ -1,2 +1,2 @@
-# Next.JS_Portfolio
+# Next.JS Portfolio
 My Portfolio Site made in Next.js. 
