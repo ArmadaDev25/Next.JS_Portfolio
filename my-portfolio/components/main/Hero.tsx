@@ -1,5 +1,8 @@
 // This is the Hero component that grabs the user's attention
+
+
 import React from 'react'
+import Hero_Content from '../sub/Hero_Content'
 
 const Hero = () => {
     return(
@@ -8,7 +11,7 @@ const Hero = () => {
                 <source src='/blackhole.webm' type='video/webm'/>
 
             </video>
-            Hero
+            <Hero_Content />
         </div>
     )
 
