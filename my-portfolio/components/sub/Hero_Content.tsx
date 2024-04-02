@@ -35,7 +35,7 @@ const Hero_Content = () => {
             <motion.p
             variants={slideInFromLeft(0.8)}
             className="text-lg text-gray-400 my-5 max-w-[600px]">
-                I&appos;m a Software Engineer with experienced with building mutiple full stack web 
+                I'm a Software Engineer with experienced with building mutiple full stack web 
                 applications in various languages and frameworks including Javascript, React, Next.js, Django and several others. 
 
             </motion.p>
