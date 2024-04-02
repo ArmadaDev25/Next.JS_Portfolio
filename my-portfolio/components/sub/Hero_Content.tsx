@@ -31,6 +31,7 @@ const Hero_Content = () => {
                 Game QA Professional
             </motion.div>
 
+            
             <motion.p
             variants={slideInFromLeft(0.8)}
             className="text-lg text-gray-400 my-5 max-w-[600px]">
@@ -38,6 +39,12 @@ const Hero_Content = () => {
                 applications in various languages and frameworks including Javascript, React, Next.js, Django and several others. 
 
             </motion.p>
+            <motion.a
+            variants={slideInFromLeft(1)}
+            >
+
+            </motion.a>
+
 
 
 
