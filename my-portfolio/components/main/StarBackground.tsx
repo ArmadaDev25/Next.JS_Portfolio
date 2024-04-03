@@ -18,8 +18,13 @@ export default function StarBackground (props: any) {
         })
     return(
         <group>
-            <Points>
-                
+            <Points
+            ref={ref}
+            positions={sphere}
+            stride={3}
+            frustumCulled
+            {...props}>
+
             </Points>
         </group>
 
