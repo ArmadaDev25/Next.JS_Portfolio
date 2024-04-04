@@ -5,7 +5,7 @@ import {Points, PointMaterial, Preload} from '@react-three/drei'
 // @ts-ignore
 import * as random from 'maath/random/dist/maath-random.esm'
 
-export default function StarBackground (props: any) {
+const StarBackground = (props: any) => {
         const ref: any = useRef()
         const [sphere] = useState(() =>
         random.inSphere(new Float32Array(5000), {radius: 1.2})
@@ -24,6 +24,13 @@ export default function StarBackground (props: any) {
             stride={3}
             frustumCulled
             {...props}>
+                <PointMaterial 
+                    transparent
+                    color="$fff"
+                    size={0.002}
+                    sizeAttenuation={true}
+                    dethWrite={false}
+                />
 
             </Points>
         </group>
@@ -31,3 +38,17 @@ export default function StarBackground (props: any) {
     )
 
 }
+
+const StarsCanvas = () =>{
+    return(
+        <div className="w-full h-auto fixed inset-0 z-[20]">
+            <Canvas camera={{position:[0,0,1]}}>
+                <Suspense fallback={null}>
+                    <StarBackground />
+                </Suspense>
+            </Canvas>
+        </div>
+    )
+
+}
+export default StarsCanvas
